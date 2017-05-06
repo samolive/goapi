@@ -1,4 +1,4 @@
-package todoControllers
+package todoCtrl
 
 import (
 	"encoding/json"
@@ -18,7 +18,6 @@ func TodoIndex(w http.ResponseWriter, r *http.Request) {
 		models.Todo{Name: "Write presentation"},
 		models.Todo{Name: "Host meetup"},
 	}
-
 	json.NewEncoder(w).Encode(todos)
 }
 
